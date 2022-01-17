@@ -71,7 +71,8 @@ function freezeObj()
       };
       console.log(remove("Hi!!"));
 */
-function fakeBin(x){
+// task is complited
+/*function fakeBin(x){
     x = x.split("");
         for (let i = 0; i < x.length; i++){
         if (Number(x[i]) >= 5){
@@ -82,6 +83,16 @@ function fakeBin(x){
     };
     x = x.join('');
     return x
-};
+}
 let binNunber = fakeBin('454');
 console.log(binNunber);
+*/
+let finalGrade = (exam, projects) => {
+  return ( 
+ exam > 90  || projects > 10 ? 100 :
+ exam > 75 && projects >= 5 ? 90 :
+ exam > 50 && projects >= 2 ? 75 : 0)
+}
+                                   
+
+  console.log(finalGrade(76, 2));
